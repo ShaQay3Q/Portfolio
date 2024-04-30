@@ -1,5 +1,254 @@
+/* inter-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  src: url("./fonts/inter-v13-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./fonts/inter-v13-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/inter-v13-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/inter-v13-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/inter-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/inter-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./fonts/inter-v13-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/inter-v13-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --fs-small: 0.8rem;
+  --fs-medium: 1.2rem;
+  --fs-large: 1.6rem;
+  --fs-xlarge: 5rem;
+  --fs-f: 10vh;
+  --fs-rem: 2.4rem;
+  --fw-rem: 700;
+  --fw-medium: 600;
+
+  --fc-darkgray: rgba(34, 40, 50, 1);
+  --fc-grey: rgba(119, 123, 133, 1);
+  --lc-grey: rgba(119, 123, 133, 0.6);
+
+  /* --bgc: #f1f4f6; */
+  --bgc: #ffe8f8;
+  --lc-home: #56a4c0;
+  --lc-one: #ca4e8a;
+  --lc-two: #ff6262;
+  --lc-three: #f6995c;
+  --lc-four: #9fc088;
+}
+
+@media (min-width: 428px) {
+  :root {
+    --fs-rem: 3.2rem;
+    --fw-rem: 700;
+    /* --fs-lg: 2.25rem; */
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: var(--fs-rem);
+  font-weight: var(--fw-rem);
+  color: var(--fc-darkgray);
+}
+
+.box {
+  background-color: var(--bgc);
+  border: 5px solid darkblue;
+  width: 20vw;
+  height: 20vh;
+  /* font-size: var(--fs-rem); */
+}
+
+p {
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-medium);
+  color: var(--fc-grey);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  display: inline-block;
+}
+
+/*===============================================================================================
+                        UTILS
+================================================================================================*/
+.flex {
+  display: flex;
+}
+
+.flexrow {
+  flex-direction: row;
+}
+
+.flexcolumn {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.self-center {
+  justify-self: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.self-end {
+  justify-self: end;
+}
+
+.self-start {
+  justify-self: start;
+}
+
+.fit-content {
+  max-width: fit-content;
+}
+
+.container {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  /* background-color: rgb(153, 118, 187); */
+}
+
+.span {
+  display: inline-block;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+/*===============================================================================================
+                        HEADER
+================================================================================================*/
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+.wrapper {
+  /* display: grid;
+  grid-template-columns: 40px 190px 65px 30px;
+  grid-template-rows: 40px;
+  gap: 10px; */
+  /* justify-content: space-between; */
+  /* align-items: center;
+  align-content: start; */
+}
+
+.txt-style {
+  font-size: var(--fs-small);
+  font-weight: 900;
+  color: var(--fc-darkgray);
+  letter-spacing: 3px;
+}
+
+/*===============================================================================================
+                        MAIN
+================================================================================================*/
+
+main {
+  background-color: rgb(17, 192, 134);
+  max-height: 100px;
 }
