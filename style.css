@@ -194,6 +194,10 @@ li {
   flex-wrap: wrap;
 }
 
+justify.right {
+  justify-content: right;
+}
+
 .self-end {
   justify-self: end;
 }
@@ -223,18 +227,21 @@ span {
 }
 
 .icon {
-  height: 25px;
-  width: 25px;
+  height: 24px;
+  width: 24px;
 }
 
 ul {
   display: inline-block;
 }
 
-.bx {
-  height: 1rem;
-  width: 0px;
-  border: solid var(--fc-darkgray);
+.line {
+  height: 1hv;
+  border: solid var(--fc-grey);
+}
+
+hr {
+  background-color: var(--fc-grey);
 }
 
 /*===============================================================================================
@@ -263,8 +270,12 @@ ul {
   text-shadow: 3px 2px var(--shadow);
 }
 
+.main-header__nav {
+  gap: 6px;
+}
+
 .main-header__nav > ul {
-  gap: 5px;
+  gap: 6px;
 }
 
 /*===============================================================================================
