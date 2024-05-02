@@ -80,16 +80,20 @@
 }
 
 :root {
+  --fs-smaller: 0.8rem;
   --fs-small: 1rem;
   --fs-medium: 1.2rem;
-  --fs-large: 1.6rem;
+  --fs-large: 1.4rem;
   --fs-xlarge: 5rem;
   --fs-f: 10vh;
   --fs-rem: 2.4rem;
   --fw-rem: 700;
   --fw-medium: 600;
 
+  --fc-black: rgba(0, 0, 0, 0.7);
+  --fc-softblack: rgba(0, 0, 0, 0.9);
   --fc-darkgray: rgba(34, 40, 50, 1);
+  --fc-darkgreyleight: rgba(34, 40, 50, 0.7);
   --fc-grey: rgba(119, 123, 133, 1);
   --lc-grey: rgba(119, 123, 133, 0.6);
   --shadow: rgba(119, 123, 133, 0.3);
@@ -125,7 +129,7 @@ body {
 h1 {
   font-size: var(--fs-rem);
   font-weight: var(--fw-rem);
-  color: var(--fc-darkgray);
+  color: var(--fc-black);
 }
 
 .box {
@@ -139,7 +143,7 @@ h1 {
 p {
   font-size: var(--fs-medium);
   font-weight: var(--fw-medium);
-  color: var(--fc-grey);
+  color: var(--fc-darkgreyleight);
 }
 
 a {
@@ -182,19 +186,27 @@ li {
   justify-content: center;
 }
 
-.items-center {
+.align-items-center {
   align-items: center;
 }
 
-.self-center {
+.justify-self-center {
   justify-self: center;
+}
+
+.align-self-center {
+  align-self: center;
 }
 
 .wrap {
   flex-wrap: wrap;
 }
 
-justify.right {
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-right {
   justify-content: right;
 }
 
@@ -229,6 +241,17 @@ span {
 .icon {
   height: 24px;
   width: 24px;
+}
+
+.bubble-link {
+  height: 102px;
+  width: 102px;
+  border-radius: 50%;
+  border: solid 1px;
+  font-size: var(--fs-smaller);
+  font-weight: var(--fw-medium);
+  justify-content: center;
+  text-align: center;
 }
 
 ul {
@@ -284,5 +307,20 @@ hr {
 
 main {
   background-color: rgb(17, 192, 134);
-  max-height: 100px;
 }
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.txt > span {
+  color: var(--fc-black);
+  font-size: var(--fs-large);
+  font-weight: 500;
+}
+
+/****************
+  BUBBLE NAV
+****************/
