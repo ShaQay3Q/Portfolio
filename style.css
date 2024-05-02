@@ -272,7 +272,7 @@ hr {
 ================================================================================================*/
 
 .logo {
-  height: 30px;
+  height: 30pxBlog;
   width: 30px;
 }
 
@@ -324,3 +324,28 @@ main {
 /****************
   BUBBLE NAV
 ****************/
+
+#about {
+  background-color: var(--lc-home);
+  border-color: var(--lc-home);
+}
+
+#coding {
+  background-color: var(--lc-one);
+  border-color: var(--lc-one);
+}
+
+#activism {
+  background-color: var(--lc-two);
+  border-color: var(--lc-two);
+}
+
+#cv {
+  background-color: var(--lc-three);
+  border-color: var(--lc-three);
+}
+
+#blog {
+  background-color: var(--lc-four);
+  border-color: var(--lc-four);
+}
