@@ -82,11 +82,12 @@
 :root {
   --fs-smaller: 0.8rem;
   --fs-small: 1rem;
-  --fs-medium: 1.2rem;
-  --fs-large: 1.4rem;
+  --fs-medium: 1.1rem;
+  --fs-large: 1.2rem;
   --fs-xlarge: 5rem;
   --fs-f: 10vh;
-  --fs-rem: 2.4rem;
+  /*used to be 2.4rem*/
+  --fs-rem: 2rem;
   --fw-rem: 700;
   --fw-medium: 600;
 
@@ -109,7 +110,7 @@
 
 @media (min-width: 428px) {
   :root {
-    --fs-rem: 3.2rem;
+    --fs-rem: 2.5rem;
     --fw-rem: 700;
     /* --fs-lg: 2.25rem; */
   }
@@ -145,6 +146,8 @@ p {
   font-size: var(--fs-medium);
   font-weight: var(--fw-medium);
   color: var(--fc-darkgreyleight);
+  word-wrap: break-word;
+  max-width: 550px;
 }
 
 a {
@@ -257,6 +260,14 @@ hr {
   background-color: var(--fc-grey);
 }
 
+.shadow {
+  box-shadow: 3px 3px var(--shadow);
+}
+
+.fivegap {
+  gap: 5px;
+}
+
 /*===============================================================================================
                         HEADER
 ================================================================================================*/
@@ -294,17 +305,30 @@ hr {
 /*===============================================================================================
                         MAIN
 ================================================================================================*/
-/* 
+
 main {
-  background-color: rgb(17, 192, 134);
-} */
+  max-width: fit-content;
+  margin: auto;
+}
+
+.content > div {
+  min-width: fit-content;
+  margin-right: 5vw;
+}
+
+.content > section {
+  gap: 20px;
+}
 
 .avatar {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
 }
 
+.txt {
+  gap: 10px;
+}
 .txt > span {
   color: var(--fc-black);
   font-size: var(--fs-large);
@@ -314,6 +338,9 @@ main {
 /****************
   BUBBLE NAV
 ****************/
+.bubble-nav > ul {
+  gap: 5px;
+}
 
 .bubble-link {
   height: 102px;
@@ -349,4 +376,11 @@ main {
 #blog {
   background-color: var(--lc-four);
   border-color: var(--lc-four);
+}
+
+/*===============================================================================================
+                        FOOTER
+================================================================================================*/
+.container > section > section {
+  gap: 6px;
 }
