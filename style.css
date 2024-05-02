@@ -244,17 +244,6 @@ span {
   width: 24px;
 }
 
-.bubble-link {
-  height: 102px;
-  width: 102px;
-  border-radius: 50%;
-  border: solid 1px;
-  font-size: var(--fs-smaller);
-  font-weight: var(--fw-medium);
-  justify-content: center;
-  text-align: center;
-}
-
 ul {
   display: inline-block;
 }
@@ -325,6 +314,17 @@ main {
 /****************
   BUBBLE NAV
 ****************/
+
+.bubble-link {
+  height: 102px;
+  width: 102px;
+  border-radius: 50%;
+  border: solid 1px;
+  font-size: var(--fs-smaller);
+  font-weight: var(--fw-medium);
+  justify-content: center;
+  text-align: center;
+}
 
 #about {
   background-color: var(--lc-home);
