@@ -186,6 +186,10 @@ li {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .justify-content {
   justify-content: center;
 }
@@ -264,8 +268,16 @@ hr {
   box-shadow: 3px 3px var(--shadow);
 }
 
-.fivegap {
-  gap: 5px;
+.tengap {
+  gap: 10px;
+}
+
+.sixgap {
+  gap: 6px;
+}
+
+.flexgrowone {
+  flex-grow: 1;
 }
 
 /*===============================================================================================
@@ -381,6 +393,7 @@ main {
 /*===============================================================================================
                         FOOTER
 ================================================================================================*/
-.container > section > section {
-  gap: 6px;
+
+.copy-right {
+  color: var(--fc-grey);
 }
