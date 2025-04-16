@@ -7,6 +7,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="./burgermenu.js" defer></script>
 </head>
 
 <body>
@@ -22,32 +23,46 @@
                 <span>Portfolio</span>
                 <img class="dot align-bottom" src="./images/circle-32.png" alt="dot icon">
             </div>
-            <div class="main-header__nav flex flexcolumn wrap">
-                <ul class="flex flexrow wrap items-center self-center">
-                    <li><a href="#">About me</a></li>
-                    <!-- <li><a href="#">Peek Inside My World</a></li> -->
+            <nav class="main-header__nav flex flexcolumn wrap">
+
+                <ul class="nav-menu flex flexrow wrap items-center self-center">
+                    <!-- <li class="nav-item"><a href="#">About me</a></li> -->
+                    <li class="bubble-link shadow flex" id="about">
+                        <!-- <li><a href="#">Peek Inside My World</a></li> -->
                     <li>|</li>
-                    <li><a href="#">Code Journey</a></li>
+                    <li class="nav-item"><a href="#">Code Journey</a></li>
                     <li>|</li>
-                    <li><a href="#">Activism Journey</a></li>
+                    <li class="nav-item"><a href="#">Activism Journey</a></li>
                     <li>|</li>
-                    <li><a href="#">Professional Pathway</a></li>
+                    <li class="nav-item"><a href="#">Professional Pathway</a></li>
                     <li>|</li>
-                    <li><a href="#">Blog</a></li>
+                    <li class="nav-item"><a href="#">Blog</a></li>
                 </ul>
                 <!-- <div class="line"></div> -->
                 <hr>
-                <ul class="flex flexrow wrap justify-content-right">
-                    <li><a href="#">HOME</a></li>
-                    <li><img class="icon" src="./images/searchone.svg" alt="serach icon"></li>
-                </ul>
+                <nav class="flex flexrow wrap justify-content-right align-items-center">
+                    <!-- <button class="veganburger" aria-label="Toggle menu"> -->
+                    <div class="veganburger" role="button" tabindex="0" aria-label="Toggle navigation menu">
+
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <!-- </button> -->
+                    <ul class="flex flexrow wrap justify-content-right sixgap">
+                        <li><a href="#">HOME</a></li>
+                        <li><img class="icon" src="./images/searchone.svg" alt="Serach"></li>
+                    </ul>
+                </nav>
                 <div>
-                    <hr>
+
+                    <!-- <hr> -->
                     <ul class="flex align-items-center">
                         <li id="burger-menu"></li>
                     </ul>
+
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -57,7 +72,7 @@
     <main class="container">
         <div class="content flex flexrow justify-content-center">
             <div class="flex">
-                <img class="avatar shadow self-center" src="./images/sh.png" alt="Avatar">
+                <img class="avatar shadow self-center" src="./images/sh.png" alt="Portrait of Shaghayegh Sahandi">
             </div>
             <section class="flex flexcolumn">
                 <section class="txt flex flexcolumn">
@@ -108,40 +123,40 @@
     <footer class="container flex flexcolumn wrap wrapper">
         <hr>
         <section class="flex flexrow wrap justify-evenly wrapper">
-            <section class="flex flexcolumn tengap fexgrowone fit-content">
+            <address class="flex flexcolumn tengap fexgrowone fit-content">
                 <h3>Contact:</h3>
                 <div class="flex flexrow sixgap fit-content">
-                    <img class="icon" src="./images/phone.svg" alt="phone icon">
+                    <img class="icon" src="./images/phone.svg" alt="phone">
                     <span>017685623723</span>
                 </div>
                 <div class="flex flexrow sixgap fit-content">
-                    <img class="icon" src="./images/emailat.svg" alt="email icon">
+                    <img class="icon" src="./images/emailat.svg" alt="email">
                     <span>shaghay3gh@gmail.com</span>
                 </div>
-            </section>
+            </address>
             <section class="flex flexcolumn tengap fit-content">
                 <h3>Find Me:</h3>
                 <div class="flex flexrow sixgap fit-content">
-                    <img class="icon" src="./images/github.svg" alt="github icon">
+                    <img class="icon" src="./images/github.svg" alt="Github">
                     <span>ShaQay3Q</span>
                 </div>
                 <div class="flex flexrow sixgap fit-content">
-                    <img class="icon" src="./images/discord.svg" alt="discord icon">
+                    <img class="icon" src="./images/discord.svg" alt="Discord">
                     <span>shaghay3gh_57080</span>
                 </div>
             </section>
             <section class="flex flexcolumn tengap">
                 <h3>Upcoming Events:</h3>
                 <div class="flex flexrow sixgap">
-                    <img class="icon" src="./images/event.svg" alt="event icon">
+                    <img class="icon" src="./images/event.svg" alt="event">
                     <span>Event Name</span>
                 </div>
                 <div class="flex flexrow sixgap">
-                    <img class="icon" src="./images/event.svg" alt="event icon">
+                    <img class="icon" src="./images/event.svg" alt="event">
                     <span>Event Name</span>
                 </div>
                 <div class="flex flexrow sixgap">
-                    <img class="icon" src="./images/event.svg" alt="event icon">
+                    <img class="icon" src="./images/event.svg" alt="event">
                     <span>Event Name</span>
                 </div>
             </section>

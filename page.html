@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaghayegh Sahandi</title>
+    <link rel="stylesheet" href="page.css" />
+    <script src="burger.js" defer></script>
+</head>
+
+<body>
+    <header class="container flex justify-between align-center wrapper">
+        <a href="#home" aria-label="Homepage">
+            <img class="logo" src="./images/logo.png" alt="Shaghayegh Sahandi logo" />
+        </a>
+
+        <!-- Burger Menu Button -->
+        <button id="burger-button" class="burger-button" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="burger-menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+
+        <!-- Fullscreen Navigation -->
+        <nav class="main-nav">
+            <ul class="flex flexrow">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile Burger Menu -->
+    <nav id="burger-menu" class="burger-menu hidden" aria-hidden="true">
+        <ul class="burger-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Content goes here -->
+    </main>
+
+    <footer class="container flex flexcolumn wrap wrapper">
+        <hr />
+        <section class="footer-section flex flexrow wrap justify-evenly">
+            <div>
+                <h2>Contact</h2>
+                <address>
+                    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                </address>
+            </div>
+
+            <div>
+                <h2>Follow Me</h2>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="GitHub Profile">GitHub</a></li>
+                    <li><a href="#" aria-label="LinkedIn Profile">LinkedIn</a></li>
+                    <li><a href="#" aria-label="Instagram Profile">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
